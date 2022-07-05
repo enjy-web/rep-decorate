@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ .page{
+    display: grid;
+    grid-template-columns: repeat(10,126px);
+    grid-template-rows: repeat(6,100px 200px 750px 200px 500px 200px  200px );
+    grid-template-areas: "head head head head head head head head head head "
+    "nav nav nav nav nav nav nav nav nav nav  "
+    "fig fig fig fig fig fig fig fig fig fig "
+    "h h h h h h h h h h"
+    "card card card card card card card card card card"
+    "foot foot foot foot foot foot foot foot foot foot"
+    "las las las las las las las las las las ";
+}
+header{
+    grid-area: head;
+    background-color: blue;
+    color:white;
+    padding: .5% 7%;
+}
+.face,.twit,.insta{
+margin:.5% .5%;
+border:2px solid white;
+border-radius: 50%;
+padding:.5%;
+text-align: center;
+}
+.btn{
+    border:2.6px solid white;
+    border-radius: 26%;
+    padding:.2%;
+color:white;
+background-color: blue;
+font-weight: bold;
+margin-left: 2%;
+}
+.home,.address,.phone,.tele{
+    margin-left: 2%;
+}
+.details{
+  margin-left:40%;
+}
+/* ////////////////////////////////////// */
+navbar{
+    grid-area: nav;
+    background-color: white;
+}
+.logo{  
+margin: 0% 4%;
+}
+.list{
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-end;
+   justify-items:center;
+ margin-right:15%;  
+}
+.list li{
+    list-style: none; 
+    margin: -6% 2%;   
+}
+/* ///////////////////////////////////////////// */
+figure{
+    grid-area: fig;
+    background-color: aquamarine;
+}
+/* /////////////////////////////////////////////// */
+.heading{
+    grid-area: h;
+text-align: center;
+padding-top: 7% ;
+margin-top: 4%;
+text-transform: uppercase;
+font-weight: bold;
+}
+/* //////////////////////////////////////////////// */
+.cards{
+    grid-area: card;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 2%;
+   
+}
+.card-text{
+  padding: 8% 0; 
+ width:74%;
+line-height:1.5;
+
+}
+
+.card-btn{
+    color: white;
+    background-color: blue;
+    padding: 2%;
+    border: none;
+}
+.pic{
+    padding-top: 5%;
+}
+/* //////////////////////////////////////// */
+footer{
+    grid-area: foot;
+    background-color: black;
+    color:white;
+text-align: center;
+}
+.insta1,.face1,.twit1{
+    font-size: 20px;
+    padding-top: 2%;   
+}
+.list1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+padding: 2% 5%;
+}
+/* ////////////////////// */
+.last{
+    grid-area: las;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.last-span1{
+    color:white;
+    padding: 5% 10%;
+} 
